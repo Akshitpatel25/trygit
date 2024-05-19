@@ -44,6 +44,6 @@ let formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().p
 //     console.log("hello world");
 // })()
 
-(() => {
-    console.log("hello world arrow function");
-})()
+((name) => {
+    console.log(`hello ${name.ag1} arrow function`);
+})({na1: "akshit", ag1:22})

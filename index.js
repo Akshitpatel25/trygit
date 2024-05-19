@@ -21,3 +21,12 @@ let obj2 = {
 }
 
 let allobj = Object.keys({...obj1, ...obj2})
+
+let num1 = 2;
+let num2 = 3;
+function mysocre() {
+    return num1 + num2
+}
+
+let result = mysocre()
+console.log(result);

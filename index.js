@@ -10,23 +10,40 @@ let formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().p
 // console.log(formattedTime);
 
 
-let obj1 = {
-    name: 'John',
-    age: 30,
-}
+// let obj1 = {
+//     name: 'John',
+//     age: 30,
+// }
 
-let obj2 = {
-    nam: 'Johny',
-    ag: 33,
-}
+// let obj2 = {
+//     nam: 'Johny',
+//     ag: 33,
+// }
 
-let allobj = Object.keys({...obj1, ...obj2})
+// let allobj = Object.keys({...obj1, ...obj2})
 
-let num1 = 2;
-let num2 = 3;
-function mysocre() {
-    return num1 + num2
-}
+// let num1 = 2;
+// let num2 = 3;
+// function mysocre() {
+//     return num1 + num2
+// }
 
-let result = mysocre()
-console.log(result);
+// let result = mysocre()
+
+// let obj = {
+//     name : "akshit",
+//     age: 22,
+
+//     myobj: function() {
+//         console.log(`${this.name} object masa aaya hai`);
+//     },
+// }
+// obj.myobj();
+
+// (function chai(){
+//     console.log("hello world");
+// })()
+
+(() => {
+    console.log("hello world arrow function");
+})()

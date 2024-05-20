@@ -5,10 +5,11 @@ let minutes = newDate.getMinutes();
 let seconds = newDate.getSeconds();
 
 // Format the time with leading zeros if necessary
-let formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+let formattedTime = `${hours.toString().padStart(2, "0")}:${minutes
+  .toString()
+  .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 
 // console.log(formattedTime);
-
 
 // let obj1 = {
 //     name: 'John',
@@ -54,3 +55,40 @@ let formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().p
 
 // console.log(myscore(100,200,300));
 
+// const arr = [1,2,3,4,5,6,7]
+
+// for (const key in arr) {
+//     console.log(`${arr[key]}`);
+// }
+
+let arr = [
+  {
+    color: "purple",
+    type: "minivan",
+    registration: new Date("2012-02-03"),
+    capacity: 7,
+  },
+  {
+    color: "red",
+    type: "SUV",
+    registration: new Date("2012-12-23"),
+    capacity: 7,
+  },
+  {
+    color: "red",
+    type: "saden",
+    registration: new Date("2022-12-23"),
+    capacity: 4,
+  },
+  {
+    color: "blue",
+    type: "sports",
+    registration: new Date("2020-01-10"),
+    capacity: 2,
+  },
+];
+
+arr = arr.filter( (car) => car.type === "SUV" && car.color === "blue")
+// arr = arr.filter( (car) => car.type === "saden" )
+
+console.log(arr);

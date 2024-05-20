@@ -44,6 +44,13 @@ let formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().p
 //     console.log("hello world");
 // })()
 
-((name) => {
-    console.log(`hello ${name.ag1} arrow function`);
-})({na1: "akshit", ag1:22})
+// ((name) => {
+//     console.log(`hello ${name.ag1} arrow function`);
+// })({na1: "akshit", ag1:22})
+
+// function myscore(...num1) {
+//     return num1
+// }
+
+// console.log(myscore(100,200,300));
+

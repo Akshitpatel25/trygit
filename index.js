@@ -65,6 +65,7 @@ let arr = [
   {
     color: "purple",
     type: "minivan",
+    price: 100,
     registration: new Date("2012-02-03"),
     capacity: 7,
   },
@@ -73,22 +74,40 @@ let arr = [
     type: "SUV",
     registration: new Date("2012-12-23"),
     capacity: 7,
+    price: 200,
   },
   {
     color: "red",
     type: "saden",
     registration: new Date("2022-12-23"),
     capacity: 4,
+    price: 300,
   },
   {
     color: "blue",
     type: "sports",
     registration: new Date("2020-01-10"),
     capacity: 2,
+    price: 400,
   },
 ];
 
-arr = arr.filter( (car) => car.type === "SUV" && car.color === "blue")
+// arr = arr.filter( (car) => {
+//     return car.type === "SUV" && car.color === "red"
+// })
 // arr = arr.filter( (car) => car.type === "saden" )
 
-console.log(arr);
+// console.log(arr);
+
+// const nums = [1,2,3,4]
+
+// let no = nums.reduce( function (acc, curr) {
+//     console.log(`acc: ${acc} and curr: ${curr}`);
+//     return acc + curr
+// })
+
+// console.log(no)
+
+// let no = arr.reduce( (arr, curr) => arr + curr.price,0)
+// console.log(no)
+

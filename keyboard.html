@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyBoard</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="insert">Press any key to know key code</div>
+    <script>
+        let insert = document.querySelector(".insert")
+
+        window.addEventListener("keydown", (e) => {
+            insert.innerHTML += `
+            <table >
+                <tr>
+                    <th>key</th>
+                    <th>key code</th>
+                </tr>
+                <tr>
+                    <td>${e.key}</td>
+                    <td>${e.keyCode}</td>
+                </tr>
+            </table>
+            `
+        })
+    </script>
+</body>
+
+</html>

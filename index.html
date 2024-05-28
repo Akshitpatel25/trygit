@@ -13,13 +13,13 @@
 </head>
 
 <body style="background-color: black; color: white;">
-    <!-- <div class="main">
+    <div class="main">
         <div class="child">child1</div>
         <div class="child">child2</div>
         <div class="child">child3</div>
         <div class="children">children</div>
         <div class="children">children</div>
-    </div> -->
+    </div>
     <script>
         // let li = document.querySelector("li");
         // let ul = document.querySelector("ul");
@@ -39,8 +39,28 @@
         //         let remove = e.target
         //         remove.remove();
         //     }
+                
         // }, false)
 
+        // const pageLoadTime = performance.timing.navigationStart;
+
+        // document.querySelector(".main").addEventListener("click", (e) => {
+        //     let date = new Date(pageLoadTime + e.timeStamp)
+        //     console.log(date);
+        //     // let hour = date.getHours()
+        //     // let minute = date.getMinutes()
+        //     // let second = date.getSeconds()
+        //     // console.log(`${hour}:${minute}:${second}`);
+        //     // console.log(data.toLocaleTimeString())
+        // }, false)
+
+        document.querySelector(".main").addEventListener("click", (e) => {
+            console.log(e.altKey);
+
+            if (e.altKey == false) {
+                console.log("hello");
+            }
+        })
     </script>
 </body>
 
